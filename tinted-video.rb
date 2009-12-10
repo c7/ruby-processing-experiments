@@ -21,9 +21,6 @@ class CaptureVideoSketch < Processing::App
     
     tint 150, 150, mouse_y
     image @video, 160, 180, 160, 120
-    
-    tint 150, 150, mouse_x
-    image @video, 320, 180, 160, 120
   end
 end
  
