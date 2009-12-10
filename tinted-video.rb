@@ -1,6 +1,7 @@
-require 'ruby-processing'
- 
-class CaptureVideoSketch < Processing::App
+# Snow Leopard? Then you might have to use the 32-bit Java
+# (Change the default using Java Preferences)
+
+class TintedVideoSketch < Processing::App
   load_library "video"
   import "processing.video"
  
@@ -24,4 +25,4 @@ class CaptureVideoSketch < Processing::App
   end
 end
  
-CaptureVideoSketch.new :title => "Tinted Video", :width => 320, :height => 300
+TintedVideoSketch.new :title => "Tinted Video", :width => 320, :height => 300
