@@ -12,19 +12,19 @@ class CaptureVideoSketch < Processing::App
     @video.read if @video.available
     
     # Medium
-    tint 100, mouse_y, 100
+    tint 150, mouse_y, 150
     image @video, 0, 0, 320, 240
     
     # Small
-    tint mouse_y, 100, 100
-    image @video, 0, 240, 160, 120
+    tint mouse_y, 150, 150
+    image @video, 0, 180, 160, 120
     
-    tint 100, 100, mouse_y
-    image @video, 160, 240, 160, 120
+    tint 150, 150, mouse_y
+    image @video, 160, 180, 160, 120
     
-    tint 100, mouse_x, mouse_y
-    image @video, 0, 360, 320, 240
+    tint 150, 150, mouse_x
+    image @video, 320, 180, 160, 120
   end
 end
  
-CaptureVideoSketch.new :title => "Tinted Video", :width => 320, :height => 600
+CaptureVideoSketch.new :title => "Tinted Video", :width => 320, :height => 300
